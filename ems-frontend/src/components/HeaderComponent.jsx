@@ -4,7 +4,7 @@ const HeaderComponent = () => {
   return (
     <div>
         <header>
-            <nav className='navbar navbar-light" style="background-color: #e3f2fd;'>
+            <nav className='navbar navbar-dark bg-dark'>
                 <a className="navbar-brand">Employee Managerment System</a>
             </nav>
         </header>
