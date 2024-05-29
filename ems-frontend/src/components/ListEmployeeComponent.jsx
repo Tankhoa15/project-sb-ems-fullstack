@@ -31,6 +31,7 @@ const ListEmployeeComponent = () => {
                     <th>Employee FirstName</th>
                     <th>Employee LastName</th>
                     <th>Employee Email</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -41,6 +42,9 @@ const ListEmployeeComponent = () => {
                             <td>{employee.firstName}</td>
                             <td>{employee.lastName}</td>
                             <td>{employee.email}</td>
+                            <td>
+                                <button></button>
+                            </td>
                         </tr>
                     )
                 }
