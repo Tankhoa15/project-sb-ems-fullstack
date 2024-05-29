@@ -20,6 +20,10 @@ const ListEmployeeComponent = () => {
         navigator('/add-employee');
     }
 
+    function updateEmployee(id){
+        navigator(`/edit-employee/${id}`);
+    }
+
   return (
     <div className='container'>
         <h2 className='text-center'>List Employees</h2>
@@ -43,7 +47,7 @@ const ListEmployeeComponent = () => {
                             <td>{employee.lastName}</td>
                             <td>{employee.email}</td>
                             <td>
-                                <button></button>
+                                <button className='btn btn-info' onClick={() => updateEmployee(employee.id)}>Update</button>
                             </td>
                         </tr>
                     )
